@@ -1,0 +1,6 @@
+<img width="308" alt="123" src="https://user-images.githubusercontent.com/78076248/115145835-ed5da880-a053-11eb-95fb-011a7786f061.PNG">
+
+Answer
+
+SELECT city.name FROM CITY  JOIN COUNTRY on CITY.CountryCode = COUNTRY.Code where COUNTRY.CONTINENT = 'Africa'
+
