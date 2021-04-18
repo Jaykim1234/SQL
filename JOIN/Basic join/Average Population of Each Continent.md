@@ -7,9 +7,11 @@ SELECT o.CONTINENT, FLOOR(AVG(i.POPULATION)) FROM CITY AS i JOIN COUNTRY AS o ON
 
 
 Function used here
+-
+
 
 Group by
--
+- Gather data with given variables
 
 Floor
 - Round the number to the floor
