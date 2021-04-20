@@ -13,14 +13,14 @@ on s.marks between g.Min_Mark and g.Max_Mark
 order by g.grade desc, s.name, s.marks
 ;
 
--Function
+## Function
 
--조건 if문
+# 조건 if문
 if(조건, 조건 충족시, 조건 미달시)
 
--join 조건문
+# join 조건문
 join ~ on 변수 between 범위1 and 범위 2
 
--order
+# order
 order by 변수1 decs, 변수2,변수3
-# 변수 1은 decs이지만 변수 2와 변수 3은 asec
+변수 1은 decs이지만 변수 2와 변수 3은 asec
