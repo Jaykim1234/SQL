@@ -13,7 +13,8 @@ having count(*)>1
 order by count(*) desc, h.hacker_id
 
 
-- Code
+## Function
+
 # select ㅁ.variable ~~~ group by ㅁ.variable
 select하는 변수들 Group by로 하는 변수랑 일치시켜야 한다.
 
