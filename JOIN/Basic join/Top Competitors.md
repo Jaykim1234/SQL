@@ -13,6 +13,23 @@ having count(*)>1
 order by count(*) desc, h.hacker_id
 
 
+
+select * 
+from submissions as s1
+join 
+
+(select c1.challenge_id, c1.hacker_id, d1.score 
+from challenges as c1 
+join Difficulty as d1 on c1.difficulty_level = d1.difficulty_level) as u1
+
+on s1.hacker_id = u1.hacker_id and s1.challenge_id = u1.challenge_id 
+join hackers as h1 
+
+on u1.hacker_id = h1.hacker_id 
+where s1.score = u1.score
+;
+
+
 ## Function
 
 # select ㅁ.variable ~~~ group by ㅁ.variable
