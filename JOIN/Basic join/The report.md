@@ -6,7 +6,8 @@ https://www.hackerrank.com/challenges/the-report/problem
 
 < Solution 1 >
 
-select if(g.grade<8,NULL,s.name), g.grade,  s.marks
+select if(g.grade<8,NULL,s.name),
+g.grade,  s.marks
 FROM STUDENTs AS s
 JOIN GRADES AS g
 on s.marks between g.Min_Mark and g.Max_Mark
@@ -16,7 +17,8 @@ order by g.grade desc, s.name, s.marks
 < Solution 2 >
 
 select 
-case s1.name when g1.grade < 8 then s1.name else NULL end , g1.grade, s1.marks 
+case s1.name when g1.grade < 8 then s1.name else NULL end ,
+g1.grade, s1.marks 
 from students as s1
 join grades as g1 on
 s1.marks between g1.min_mark and g1.max_mark
