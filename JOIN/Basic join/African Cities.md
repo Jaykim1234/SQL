@@ -2,5 +2,18 @@
 
 Answer
 
-SELECT city.name FROM CITY  JOIN COUNTRY on CITY.CountryCode = COUNTRY.Code where COUNTRY.CONTINENT = 'Africa'
+< Solution 1 >
+
+SELECT city.name 
+FROM CITY  
+JOIN COUNTRY on CITY.CountryCode = COUNTRY.Code 
+where COUNTRY.CONTINENT = 'Africa'
+
+< Solution 2 >
+
+select c1.name 
+from CITY AS c1, COUNTRY AS c2
+where c1.countrycode = c2.code and
+    c2.CONTINENT = 'Africa';
+
 
