@@ -3,6 +3,7 @@
 <img width="365" alt="3" src="https://user-images.githubusercontent.com/78076248/115998534-f74d5180-a5e7-11eb-9260-adafd6d899d2.PNG">
 <img width="335" alt="4" src="https://user-images.githubusercontent.com/78076248/115998540-fa484200-a5e7-11eb-86b8-d526b7e6f55b.PNG">
 
+1st
 select h.hacker_id, h.name from submissions as s 
 join Challenges as c on s.challenge_id  = c.challenge_id  
 join Difficulty as d on d.difficulty_level = c.difficulty_level 
@@ -13,7 +14,7 @@ having count(*)>1
 order by count(*) desc, h.hacker_id
 
 
-
+2nd (not suceed)
 select * 
 from submissions as s1
 join 
@@ -29,6 +30,19 @@ on u1.hacker_id = h1.hacker_id
 where s1.score = u1.score
 ;
 
+3rd
+select h1.hacker_id, h1.name
+from submissions as s1
+join challenges as c1
+on s1.challenge_id = c1.challenge_id 
+join difficulty as d1
+on c1.difficulty_level = d1.difficulty_level
+join hackers as h1
+on s1.hacker_id = h1.hacker_id
+where s1.score = d1.score
+group by h1.hacker_id, h1.name
+having count(*) > 1
+order by count(*) desc, h1.hacker_id
 
 ## Function
 
