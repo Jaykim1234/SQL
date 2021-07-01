@@ -1,0 +1,8 @@
+1.Case description – the chosen dataset, and how the database looks
+
+2.KPIs selection (based on a Balanced Scorecard), definition and motivation – match the KPIs with the strategy, and with the problems
+
+3.The data warehouse design. If you managed to upload your data into the DW, please add a screenshot of your fact tables and dimension tables (using select statement in MySQLWorksbench) in the report. 
+
+4.The Dashboard (screen shot) – explain why the visualisations were used for the different KPIs
+Please do not write more than 20 pages, if you have many charts, you could move it to the Appendix.
