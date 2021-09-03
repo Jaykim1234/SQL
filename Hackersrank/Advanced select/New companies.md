@@ -7,6 +7,10 @@ https://www.hackerrank.com/challenges/the-company/problem
 
 ![image](https://user-images.githubusercontent.com/78076248/132000055-42bb8096-aa06-466f-802a-ceee670ef348.png)
 
+### Solution
+
+![image](https://user-images.githubusercontent.com/78076248/132000249-267b239e-268a-4fec-8493-4b22fc93a6d8.png)
+
 
 select 
 
