@@ -9,6 +9,7 @@ https://www.hackerrank.com/challenges/the-company/problem
 
 
 select 
+
 c1.company_code, 
 c1.founder, 
 count(distinct l1.lead_manager_code), 
